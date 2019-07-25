@@ -1,17 +1,37 @@
-# 2019-GraphNeuralNetworksPaperList
-Graph Neural Networks Paper List of 2019 Conferences
+# 2019-GraphNeuralNetworksPaperList <!-- omit in toc -->
+Graph Neural Networks Paper List of 2019 Conferences 
+
 
 - [ICML | 2019 ](#icml--2019)
+  - [Adversarial](#adversarial)
+  - [Reinforcement Learning](#reinforcement-learning)
+  - [generative](#generative)
+  - [Optimization](#optimization)
 - [ICLR | 2019](#iclr--2019)
 - [AAAI | 2019](#aaai--2019)
 - [IJCAI | 2019](#ijcai--2019)
 - [ Aistats | 2019 ](#aistats--2019)
 
-## [ICML | 2019](https://icml.cc/Conferences/2019/Schedule)
+## [ICML | 2019 ](https://icml.cc/Conferences/2019/Schedule)
+### Adversarial
 - Adversarial Attacks on Node Embeddings via Graph Poisoning
+### Reinforcement Learning
 - TibGM: A Transferable and Information-Based Graphical Model Approach for Reinforcement Learning
-- Molecular Hypergraph Grammar with Its Application to Molecular Optimization
-- GMNN: Graph Markov Neural Networks
+### generative
+- [Molecular Hypergraph Grammar with Its Application to Molecular Optimization](http://proceedings.mlr.press/v97/kajino19a/kajino19a.pdf)
+  - Aims to discover novel molecules with desirable properties.
+    - its two fundamental challenges are: 
+        -   it is not trivial to generate valid molecules in a controllable way due to hard chemical constraints such as the valency conditions.
+        -   it is often costly to evaluate a property of a novel molecule, and therefore, the number of property evaluations is limited. 
+    -   These challenges are to some extent alleviated by a combination of a variational autoencoder (VAE) and Bayesian optimization (BO).
+        -   its architecture is rather complex due to auxiliary neural networks other than VAE, making it difficult to train.
+    -   This paper presents a molecular hypergraph grammar variational autoencoder (MHG-VAE), which uses a single VAE to achieve 100% validity.
+        -   Our idea is to develop a graph grammar encoding the hard chemical constraints, called molecular hypergraph grammar (MHG), which guides VAE to always generate valid molecules. 
+### Optimization
+- [GMNN: Graph Markov Neural Networks](http://proceedings.mlr.press/v97/qu19a/qu19a.pdf)
+  -  AGMNN models the joint distribution of object labels with a conditional random field, which can be effectively trained with the variational EM algorithm. 
+  - In the E-step, one graph neural network learns effective object representations for approximating the posterior distributions of object labels. In the M-step, another graph neural network is used to model the local label dependency. 
+  - Experiments on object classification, link classification, and unsupervised node representation learning show that GMNN achieves state-of-the-art results
 - Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance
 - Self-Attention Graph Pooling
 - Circuit-GNN: Graph Neural Networks for Distributed Circuit Design
@@ -223,7 +243,7 @@ Representation Learning on Graphs and Manifolds[workshop: https://rlgm.github.io
 - Adversarial Attacks on Neural Networks for Graph Data
 - OpenMarkov, an open-source tool for probabilistic graphical models
 
-## [Aistats | 2019](http://proceedings.mlr.press/v89/)
+## [ Aistats | 2019 ](http://proceedings.mlr.press/v89/)
 - Identifiability of Generalized Hypergeometric Distribution (GHD) Directed Acyclic Graphical Models
 - Modularity-based Sparse Soft Graph Clustering
 - Graph Embedding with Shifted Inner Product Similarity and Its Improved Approximation Capability
